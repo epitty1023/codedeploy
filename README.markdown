@@ -1,7 +1,5 @@
 # AWS CodeDeploy Puppet Module
 
-[![Build Status](https://travis-ci.org/walkamongus/puppet-codedeploy.svg?branch=master)](https://travis-ci.org/walkamongus/puppet-codedeploy)
-
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -25,6 +23,7 @@ The AWS Codedeploy allows you to automatically deploy applications to AWS instan
 
 * Packages
     * codedeploy-agent (RedHat)
+    * codedeploy-agent (Windows)
     * awscli (Debian)
     * ruby2.0 (Debian)
 * Services
@@ -40,6 +39,7 @@ Install the AWS CodeDeploy agent and ensure the agent is running
 
 This module has been tested on:
 * RedHat 6,7
+* Windows 2012 Server
 * Debian 6,7
 * Ubuntu 14.04
 

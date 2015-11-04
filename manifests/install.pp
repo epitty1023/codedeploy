@@ -5,7 +5,13 @@
 class codedeploy::install {
 
   case $::osfamily {
-    'RedHat', 'Amazon': {
+   'RedHat', 'Amazon': {
+      package { $::codedeploy::package_name:
+        ensure => present,
+        source => $::codedeploy::package_url,
+      }
+    }
+    'Windows': {
       package { $::codedeploy::package_name:
         ensure => present,
         source => $::codedeploy::package_url,
