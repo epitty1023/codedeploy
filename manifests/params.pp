@@ -17,8 +17,8 @@ class codedeploy::params {
     }
     'Windows': {
       $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-east-1/latest/codedeploy-agent.msi'
-      $package_name = 'codedeploy-agent'
-      $service_name = 'codedeploy-agent'
+      $package_name = 'codedeployagent'
+      $service_name = 'codedeployagent'
     }
     default: {
       fail("${::operatingsystem} not supported")

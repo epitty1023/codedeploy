@@ -11,7 +11,7 @@ class codedeploy::install {
         source => $::codedeploy::package_url,
       }
     }
-    'Windows': {
+    'windows': {
       package { $::codedeploy::package_name:
         ensure => present,
         source => $::codedeploy::package_url,
